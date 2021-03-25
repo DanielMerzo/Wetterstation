@@ -16,8 +16,8 @@ WiFiManager wifiManager;
 WiFiClient client;
 
 // ========================  hier deinen API-Key eintragen!!!  ============================================================================================================
-const String city = "Oldenburg";
-const String api_key = "273a3cb65131d7e29e83b9a1400f64d8";    // dein Open-Weather-Map-API-Schluessel, kostenlos beziehbar ueber https://openweathermap.org/
+const String city = "";
+const String api_key = "";    // dein Open-Weather-Map-API-Schluessel, kostenlos beziehbar ueber https://openweathermap.org/
 // ========================================================================================================================================================================
 
 // Variablen Deklarationen
