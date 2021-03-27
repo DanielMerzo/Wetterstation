@@ -75,6 +75,7 @@ void loop() {                                 //Loop methode spielt Animationen 
   if (millis() - lastcheck >= 1800000) {      //if Anweisung prüft ob 30min vergangen sind
     getCurrentWeatherConditions();            //Wetter Daten werden erfasst
     lastcheck = millis();
+    topdown(0,0,0);                           //clears LEDs after switch
   }
   if (weatherID == 800) {
     LED_effect_clearSky();
