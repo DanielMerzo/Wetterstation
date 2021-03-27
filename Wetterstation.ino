@@ -78,22 +78,22 @@ void loop() {                                 //Loop methode spielt Animationen 
   }
   if (weatherID == 800) {
     LED_effect_clearSky();
-    Serial.println(weatherforecast_shortened); delay(200); //weatherforecast_shortened = "Sun"
+    Serial.println(weatherforecast_shortened); delay(200); //weatherforecast_shortened = "Sun" falls weatherID = 800
   } else if (weatherID == 801 ) {
     LED_effect_sunClouds();
-    Serial.println(weatherforecast_shortened); delay(200); //weatherforecast_shortened = "Clouds with Sun"
+    Serial.println(weatherforecast_shortened); delay(200); //weatherforecast_shortened = "Clouds with Sun" weatherID = 801
   } else if (weatherID == 615 || weatherID == 616) {
     LED_effect_snowRain();
-    Serial.println(weatherforecast_shortened); delay(200); //weatherforecast_shortened = "Snow with Rain"
+    Serial.println(weatherforecast_shortened); delay(200); //weatherforecast_shortened = "Snow with Rain" weatherID = 615/616
   } else if (weatherID == 200 || weatherID == 201 || weatherID == 202) {
     LED_effect_stormRain();
-    Serial.println(weatherforecast_shortened); delay(200);//weatherforecast_shortened = "Storm with Rain"
+    Serial.println(weatherforecast_shortened); delay(200);//weatherforecast_shortened = "Storm with Rain" weatherID = 200/201/202
   } else if (weatherID == 230 || weatherID == 231 || weatherID == 232) {
     LED_effect_stormDrizzle();
-    Serial.println(weatherforecast_shortened); delay(200); //weatherforecast_shortened = "Storm with Drizzle"
+    Serial.println(weatherforecast_shortened); delay(200); //weatherforecast_shortened = "Storm with Drizzle" weatherID = 230/231/232
   } else if (weatherID == 701 || weatherID == 741) {
     LED_effect_drizzle();
-    Serial.println(weatherforecast_shortened); delay(200);//weatherforecast_shortened = "Fog or Mist"
+    Serial.println(weatherforecast_shortened); delay(200);//weatherforecast_shortened = "Fog or Mist" weatherID = 701/741
   } else {
     switch (weatherID_shortened) {
       case 2: LED_effect_thunder(); Serial.println(weatherforecast_shortened); delay(200);  break;
